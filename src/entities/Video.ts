@@ -14,6 +14,9 @@ export class Video {
   description: string;
 
   @Column()
+  duration: number;
+
+  @Column()
   category_id: string;
 
   @ManyToOne(() => Category)
